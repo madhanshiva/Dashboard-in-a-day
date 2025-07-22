@@ -153,47 +153,45 @@ To analyze the Sales of all countries, it is convenient to have a single **Sales
 
    ![](Images/21-7-25-l2-18.png)
 
-1. On the Country column, click on the dropdown next to it and select **Load more** to validate you have data from all eight countries. 
+1. On the **Country column**, click on the dropdown next to it **(1)** and select **Load more (2)** to validate you have data from all eight countries. 
 
-   ![](Images/did44.png)
+   ![](Images/21-7-25-l2-20.1.png)
 
 1. Click on **OK** to close this filter.
 
    ![](Images/did45.png)
 
-1. Click on the **dropdown arrow** next to **Date** in the **Sales** Query.
+1. Click on the **dropdown arrow (1)** next to **Date** in the **Sales** Query and click on the **Date Filters (2)** option and select **In the Previous…**.
 
-1. Click on the **Date Filters** option and select **In the Previous…**.
-
-   ![](Images/did46.png)
+   ![](Images/21-7-25-l2-20.png)
     
 1. The **Filter Rows** dialog box opens. Enter **3 (1)** in the text box next to **is in the previous** and select **years (2)** from the drop-down menu. Click on **OK (3)**.
 
       ![](Images/21-7-25-l2-19.png)
 
-      > **Note:** Our dataset has data from 2022 to 2024. For our analysis we want to start with the last three years of data (2022-2024). We don’t yet know how many rows will result. We can filter by year to get the subset.
+      **Note:** Our dataset covers the period from 2022 to 2024. For our analysis, we will start with the data from the last three years (2022-2024). We don’t yet know how many rows will result. We can filter by year to get the subset.
    
-1. From the Queries panel on the left, click on the **International Sales** query. Right-click and select **Enable Load**. This will disable loading International Sales.
+1. From the Queries panel on the left, click on the **International Sales (1)** query. Right-click and select **Enable Load (2)**. This will disable loading International Sales.
 
-      ![](Images/did48.png)
+   ![](Images/21-7-25-l2-21.png)
     
-     >**Note**: The appropriate data from the International Sales table will load into the Sales table each time the model is refreshed. By removing the International Sales table, we are preventing duplicate data from loading into the model and increasing its file size. In some instances, storing very large amounts of data affects the data model performance.
+     **Note**: The appropriate data from the International Sales table will be loaded into the Sales table each time the model is refreshed. By removing the International Sales table, we are preventing duplicate data from loading into the model and increasing its file size. In some instances, storing very large amounts of data affects the data model performance.
  
-1. From the ribbon, click on the **View** tab and select **Query Dependencies**.
+1. Click on the **View tab (1)** in the Power Query Editor ribbon, and select **Query Dependencies (2)**.
 
-     ![](Images/diad7.png)
+    ![](Images/21-7-25-l2-22.png)
 
-   > **Note:** This opens the **Query Dependencies** dialog box. The dialog box shows the source of each query and its dependencies. For example, we see that the Sales query has a CSV file source and a dependency on the International Sales query. This is a useful information to share knowledge with your team members.
+   > **Note:** This opens the **Query Dependencies** dialog box. The dialog box shows the source of each query and its dependencies. For example, we see that the Sales query has a CSV file source and a dependency on the International Sales query. This is useful information to share with your team members.
 
-1. **Close** the dialog box.
+1. On the **Query Dependencies** dialog box. Click on **Close**.
 
      ![](Images/diad8.png)
 
     > **Note:** You have now successfully completed import and data shaping operations and are ready to load the data into the Power BI Desktop data model to visualize the data. 
 
-1. Click on **File** and then click on **Close & Apply**  option. This will close out the power query window and apply all changes.
+1. Click on **File (1)** and then click on **Close & Apply (2)**  option. This will close out the Power Query window and apply all changes.
 
-      ![](Images/did49.png)
+      ![](Images/21-7-25-l2-24.png)
     
     > **Note:** All the data will be loaded in memory in the Power BI Desktop. You will see the progress dialog box with the number of rows being loaded in each table as shown in the Figure.
     
@@ -205,14 +203,16 @@ To analyze the Sales of all countries, it is convenient to have a single **Sales
 
       ![](Images/did50.png)
 
-1. Name the file as **MyFirstPowerBIModel**. Save the file in `C:\DIAD\Attendee\Reports` folder.
+1. In the Save As window, navigate to the `C:\DIAD\Attendee\Reports` folder **(1)**, enter **MyFirstPowerBIModel** as the file name **(2)**, and click **Save (3)**.
 
-1. On the left panel, click **Table view ![](Images/powerbi-01-51.png) icon**  to view the data that was loaded. If you need to open Power Query editor, navigate to **Home -> Transform Data**.
+   ![](Images/21-7-25-l2-25.png)
 
-      ![](Images/did52.png)
+1. On the left panel, click **Table view** **![](Images/powerbi-01-51.png) icon** **(1)** to view the data that was loaded. If you need to open Power Query editor, navigate to **Home -> Transform Data (2**.
+
+   ![](Images/21-7-25-l2-26.png)
 
 ## Summary
 
-In this lab, you have filled empty values, split columns, renamed columns, removed unwanted rows, transposed data and appended queries.
+In this lab, you have filled empty values, split columns, renamed columns, removed unwanted rows, transposed data, and appended queries.
      
 ### You have successfully completed the lab!
