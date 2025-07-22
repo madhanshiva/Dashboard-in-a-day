@@ -17,11 +17,13 @@ In this lab, you will explore methods to transform data in the data model to ens
 
 ### Task 1 - Power BI Desktop – Filling empty values
 
-1. On the Query Editor window, click each query name in the **Other Queries** section.
-   
+1. On the **Query Editor** window, expand **Other Queries (1)** and click each query one by one like **Sales**, **Product_Table**, **geo**, **manufacturer**, and **InternationalSales (2)**.
+
+   ![](Images/21-7-25-l2-1.png)
+
    >**Note**: Please ignore the warning: "There are pending changes in your queries that haven't been applied," if you encounter it in any of the upcoming tasks or labs.
   
-1. Navigate to **Query Settings**, and then from the **Properties** section in the right-hand pane ,rename the queries as shown below:
+1. Navigate to **Query Settings**, and then from the **Properties** section in the right-hand pane, rename the queries as shown below:
 
    | Initial Name             | Final Name            |
    | ------------------------ | --------------------- |
@@ -30,119 +32,126 @@ In this lab, you will explore methods to transform data in the data model to ens
    | manufacturer             | `Manufacturer`        |
    | InternationalSales       | `International Sales` |
 
-      ![](Images/did27.png)
+   ![](Images/21-7-25-l2-2.png)
 
-1. From the left pane, click on the **Product (1)** query. Click on the **Category (2)** column. From the ribbon, click on the **Transform** tab , select **Fill (3)**, and then click on **Down (4)**.
+1. From the left pane, select the **Product (1)** query. Then, click the **Category (2)** column. On the ribbon, go to the **Transform (3)** tab, select **Fill (4)**, and choose **Down (5)** to populate empty cells with values from above.
 
-      ![](Images/did28.png)
+      ![](Images/21-7-25-l2-3.png)
 
-### Task 2 - Power BI Desktop – Splitting columns
+## Task 2 - Power BI Desktop – Splitting columns
 
 In the Product query, notice the Product column. It looks like the product name and product segmentare concatenated into one field with a pipe (|) separator. Let’s split them into two columns. This will be useful when we build visuals, so we can analyze based on both fields.
 
-1. Click on the **Product (1)** column. From the ribbon, click on the **Home** tab, select **Split Column (2)**, and then click **By Delimiter (3)**.
+1. From the left pane, select the **Product (1)** query. Then, click the **Product (2)** column. On the ribbon, go to the **Home (3)** tab, click **Split Column (4)**, and choose **By Delimiter (5)** to separate the column contents.
 
-      ![](Images/did29.png)
+      ![](Images/21-7-25-l2-4.png)
 
-      > **Note:** The Split **Column by Delimiter dialog** box opens.
-
-1. In the dialog box, make sure that **Custom (1)** is selected in the **Select or enter delimiter** drop-down menu. Replace the hyphen symbol with **pipe symbol (|)** **(2)** as shown in the image. Click on **OK (3)**.
+1. In the **Split Column by Delimiter** dialog box, make sure that **Custom (1)** is selected in the **Select or enter delimiter** drop-down menu. Replace the hyphen symbol with **pipe symbol (|)** **(2)** as shown in the image and click on **OK (3)**.
 
       ![](Images/did30.png)
 
-### Task 3 - Power BI Desktop – Renaming columns
+## Task 3 - Power BI Desktop – Renaming columns
 
-1. Click the **Product.1 (1)** column, and then **right-click** next to the column name and click on **Rename… (2)** from the selection menu.
+1. On the **Query Editor** window, click the **Product.1 (1)** column, and then **right-click** next to the column name and click on **Rename… (2)** from the selection menu and **Rename** the field to **Product**.
 
-      ![](Images/did31.png)
+   ![](Images/did31.png)
 
-1. **Rename** the field to **Product**.
+1. Also, click the **Product.2 (1)** column, and then **right-click** next to the column name and click on **Rename… (2)** from the selection menu and **Rename** the field to **Segment**.
 
-1. Also, rename **Product.2** to **Segment**.
+   ![](Images/21-7-25-l2-5.png)
         
-### Task 4 - Power BI Desktop – Removing unwanted rows
+## Task 4 - Power BI Desktop – Removing unwanted rows
 
 In the **Geography** query, notice that the first two rows are informational. They are not part of the data. Similarly, in the Manufacturer query, the last couple of rows are not part of the data. Let’s remove them so we have a clean dataset.
 
-1. From the left pane, click on the **Geography (1)** query. From the ribbon, click on the **Reduce Rows (2)** dropdown and then select **Remove Rows (3)** and then click on **Remove Top Rows (4)**.
+1. From the left pane, select the **Geography (1)** query. On the ribbon, click **Remove Rows (2)**, then choose **Remove Top Rows (3)** to clean up the header rows from your dataset.
 
-      ![](Images/remove-rows-1703.png)
+   ![](Images/21-7-25-l2-6.png)
 
-1. The **Remove Top Rows** dialog box opens. Enter **2** in the text box and click on **OK**.
-    
+1. In the **Remove Top Rows** dialog box, type `2` in the **Number of rows (1)** field and click **OK (2)**.
+
+    ![](Images/21-7-25-l2-7.png)
+
       >**Note**: Notice the first row in the Geography query is now the column header. 
 
-1. With **Geography** query selected in the left panel, from the ribbon click **Home**, and then select **Use First Row as Headers**.
+1. With **Geography** query selected in the left panel, on the **Home** tab, click on **Use First Row as Headers** to promote the current first row to column headers.
 
       ![](Images/did33.png)
 
-1. Click on **123 (1)** next to the Zip Column. From the dialog box, select **Text (2)**.
+1. With the **Geography** query selected, click on **123 (1)** next to the Zip Column, then choose **Text (2)** from the dropdown list to change the column’s data type. 
 
-      ![](Images/did34.png)
-
-1. Click on **Replace Current** in the **Change Column Type** dialog box.
-
-1. From the left panel, click on the **Manufacturer (1)** query. From the ribbon, click on the **Home** tab, click on the **Reduce Rows (2)** dropdown and then select **Remove Rows (3)** and then click on **Remove Bottom Rows (4)**.
- 
-      ![](Images/remove-rows2-1703.png)
-
-1. The **Remove Bottom Rows** dialog box opens. Enter **3** in the **Number of rows text box** and click on **OK**.
+      ![](Images/21-7-25-l2-8.png)
    
-### Task 5 - Power BI Desktop – Transposing data
+1. In the **Change Column Type** dialog box, click on **Replace current** to apply the new data type.
 
-1. Stay on the **Manufacturer (1)** query, click on the **Transform** tab and then select **Transpose (2)**.
+      ![](Images/21-7-25-l2-9.png)
+
+1. From the left pane, select the **Manufacturer (1)** query, go to the **Home (2)** tab. On the ribbon, click **Remove Rows (3)**, then choose **Remove Bottom Rows (4)**.
+
+    ![](Images/21-7-25-l2-10.png)
+
+1. In the **Remove Top Rows** dialog box, type `3` in the **Number of rows (1)** field and click **OK (2)**.
+
+    ![](Images/21-7-25-l2-11.png)
+   
+## Task 5 - Power BI Desktop – Transposing data
+
+1. From the left pane, select the **Manufacturer (1)** query. On the ribbon, go to the **Transform** tab and click **Transpose (2)** to pivot the table rows into columns.
 
       ![](Images/did36.png)
 
-1. From the ribbon, click on the **Home** tab and select **Use First Row as Headers**.
+1. With **Manufacturer** query selected in the left panel, on the **Home** tab, click on **Use First Row as Headers** to promote the current first row to column headers. 
 
       ![](Images/did37.png)
 
       > **Note:** Notice that now the **Manufacturer** table is laid out the way we need it with a header and values along columns.
 
-### Task 6 - Power BI Desktop – Appending queries
+## Task 6 - Power BI Desktop – Appending queries
 
 To analyze the Sales of all countries, it is convenient to have a single **Sales** table. To do this, you need to append all the rows from the **International Sales** query to the **Sales** query.
 
-1. Click on the **Sales (1)** query from the left pane. From the ribbon, click on the **Home** tab and then select the dropdown from **Combine (2)** and click on **Append Queries (3)**. 
+1. From the left pane, select the **Sales (1)** query. On the **Home (2)** tab, click **Append Queries (3)** from the ribbon to combine data from another table with the current one.
 
-      ![](Images/append-queries-1703.png)
+   ![](Images/21-7-25-l2-12.png)
 
-1. In the Append dialog box, keep the default **Two Tables (1)** checked, select **International Sales (2)** from the drop-down and then click on **OK (3)**.
+1. In the **Append** dialog, select **Two tables (1)**, choose **International Sales (2)** as the table to append, and click **OK (3)** to merge the data.
 
-     ![](Images/diad6.png)
+      ![](Images/21-7-25-l2-13.png)
     
       > **Note:** You will now see a new column in the **Sales** table called **Country**. Since the International **Sales** query had the additional column for **Country**, Power BI Desktop added the column to the **Sales** table when it loaded the values from the **International Sales** query. 
 
-1. Keep the **Sales (1)** query selected. From the ribbon, click on the **Add Column** tab and select **Conditional Column (2)**.
+1. With the **Sales (1)** query selected, go to the **Add Column (2)** tab on the ribbon, then click **Conditional Column (3)** to create a new column based on specified conditions.
 
-      ![](Images/did40.png)
+      ![](Images/21-7-25-l2-14.png)
     
 1. In the **Add Conditional Column** dialog box, add the below values and click on **OK (8)**:
 
-   - Enter the name of the column as **CountryName (1)**
-   - Select the **Country (2)** from the **Column Name** drop-down menu
-   - Select the **equals (3)** from the **Operator** drop-down menu
-   - Enter **null (4)** in the **Value** box
-   - Enter **USA (5)** in the **Output** box
-   - Click on the drop-down menu under **Else** and then click the **Select a column (6)** option
-   - Click on the **Country (7)** from the column drop-down menu
+   - Set the **New column name** to `CountryName` **(1)**.
+   - In the condition row, select `Country` from the **Column Name** dropdown **(2)**.
+   - Set the **Operator** to `equals` **(3)**.
+   - Enter `null` in the **Value** field **(4)**.
+   - Set the **Output** to `USA` **(5)**.
+   - In the **Else** section, click **Select a column (6)** and choose `Country` **(7)**.
 
-       ![](Images/did41.png)
-     
-1. You will see the **CountryName** column in the Query editor window.
-   
+     ![](Images/21-7-25-l2-15.png)
+
+     > **Note:** You will see the **CountryName** column in the Query editor window.   
+
 1. Right-click on the **Country** column and click **Remove** as shown in the figure.
  
    ![](Images/did42.png)
 
-1. Right-click on the **CountryName** column and rename it to **Country**.
+1. Right-click on the **CountryName (1)** column and rename it to **Country (2)**.
 
-1. From the **Home** tab, click on the **Data Type (1)** option, change the **data type** of the **Country** column to **Text (2)**.
+    ![](Images/21-7-25-l2-16.png)
 
-   ![](Images/did43.png)
+1. From the **Queries** pane, select **Sales (1)**. go to **Home** tab, click on the **Data Type (1)** option, change the **data type** of the **Country** column to **Text (2)**.
 
-1. From the **Home** tab, click on the **Data Type** option, change the **data type** of the **Revenue** column to **Fixed Decimal Number** because it is a currency field.
+     ![](Images/21-7-25-l2-17.png)
+
+1. In the **Sales** query, select the **Revenue (1)** column. On the ribbon, go to the **Data Type (2)** dropdown and choose **Fixed decimal number (3)** to ensure consistent numeric formatting.
+
+   ![](Images/21-7-25-l2-18.png)
 
 1. On the Country column, click on the dropdown next to it and select **Load more** to validate you have data from all eight countries. 
 
@@ -158,9 +167,9 @@ To analyze the Sales of all countries, it is convenient to have a single **Sales
 
    ![](Images/did46.png)
     
-1. The **Filter Rows** dialog box opens. Enter **3 (1)** in the text box next to **is in the previous**. Click **years (2)** from the drop-down menu. Click on **OK (3)**.
+1. The **Filter Rows** dialog box opens. Enter **3 (1)** in the text box next to **is in the previous** and select **years (2)** from the drop-down menu. Click on **OK (3)**.
 
-      ![](Images/did47.png)
+      ![](Images/21-7-25-l2-19.png)
 
       > **Note:** Our dataset has data from 2022 to 2024. For our analysis we want to start with the last three years of data (2022-2024). We don’t yet know how many rows will result. We can filter by year to get the subset.
    
