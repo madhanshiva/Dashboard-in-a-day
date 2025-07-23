@@ -19,7 +19,7 @@ In this lab, you will explore methods to transform data in the data model to ens
 
 1. On the **Query Editor** window, expand **Other Queries (1)** and click each query one by one like **Sales**, **Product_Table**, **geo**, **manufacturer**, and **InternationalSales (2)**.
 
-   ![](Images/21-7-25-l2-1.png)
+   ![](Images/21-7-25-l2-1.1.png)
 
    >**Note**: Please ignore the warning: "There are pending changes in your queries that haven't been applied," if you encounter it in any of the upcoming tasks or labs.
   
@@ -145,7 +145,7 @@ To analyze the Sales of all countries, it is convenient to have a single **Sales
 
     ![](Images/21-7-25-l2-16.png)
 
-1. From the **Queries** pane, select **Sales (1)**. go to **Home** tab, click on the **Data Type (1)** option, change the **data type** of the **Country** column to **Text (2)**.
+1. From the **Queries** pane, select **Sales (1)**. go to **Home** tab, click on the **Data Type (2)** option, change the **data type** of the **Country** column to **Text (3)**.
 
      ![](Images/21-7-25-l2-17.png)
 
@@ -203,11 +203,11 @@ To analyze the Sales of all countries, it is convenient to have a single **Sales
 
       ![](Images/did50.png)
 
-1. In the Save As window, navigate to the `C:\DIAD\Attendee\Reports` folder **(1)**, enter **MyFirstPowerBIModel** as the file name **(2)**, and click **Save (3)**.
+1. In the Save As window, navigate to the `C:\DIAD\Attendee\Reports` folder **(1)**, enter **MyFirstPowerBIModel** as the File name **(2)**, and click **Save (3)**.
 
    ![](Images/21-7-25-l2-25.png)
 
-1. On the left panel, click **Table view** **![](Images/powerbi-01-51.png) icon** **(1)** to view the data that was loaded. If you need to open Power Query editor, navigate to **Home -> Transform Data (2**.
+1. On the left panel, click **Table view** **![](Images/powerbi-01-51.png) icon** **(1)** to view the data that was loaded. If you need to open Power Query editor, navigate to **Home -> Transform Data (2)**.
 
    ![](Images/21-7-25-l2-26.png)
 
