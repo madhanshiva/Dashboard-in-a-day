@@ -47,7 +47,7 @@ In this lab, you will explore the key features of the Power BI service. This int
 
 1. On the **Options** page, click on **Preview features (1)** from the left pane under **Global** section. Check the box for **Shape map visual (2)** option and click on **OK (3)** to close the dialog.
  
-     ![](Images/21-7-25-l1-7.png)
+     ![](Images/21-7-25-l1-7.1.png)
 
       > **Note:** Click on **OK** when you are prompted with the **Feature requires a restart** pop-up.
 
@@ -79,7 +79,7 @@ In this lab, you will explore the key features of the Power BI service. This int
      
      ![](Images/diad3.png)
      
-     >**Note**: You will bring in sales data from other countries as well as performing certain data shaping operations.
+     >**Note**: You will bring in sales data from other countries as well as perform certain data shaping operations.
 
 1. In the **Power Query Editor**, select the **Zip** column **(1)**, make sure you're on the **Home** tab **(2)**, click **Data Type (3)**, and change it to **Text (4)**.
 
@@ -93,7 +93,7 @@ In this lab, you will explore the key features of the Power BI service. This int
 
    ![](Images/21-7-25-l1-15.png)
     
-1. In the **Open** dialog box, browse to the folder path **C:\DIAD\Attendee\Data\USSales (1)**, select **bi_dimensions.xlsx (2)**, and click **Open (3)**.
+1. In the **Open** dialog box, browse to the folder path `C:\DIAD\Attendee\Data\USSales` **(1)**, select **bi_dimensions.xlsx (2)**, and click **Open (3)**.
 
     ![](Images/21-7-25-l1-16.png)
     
@@ -141,7 +141,7 @@ In this lab, you will explore the key features of the Power BI service. This int
     
      >**Note**: The data in your file for **Date accessed**, **Date modified**, and **Date created** might be different than the dates displayed in the screenshot. 
 
-1. On the **Combine Files** dialog, ensure the **First File (1)** is selected for Sample file, **comma (2)** is selected for Dilimiter and click on **OK (3)**.
+1. On the **Combine Files** dialog, ensure the **First file (1)** is selected for **Sample File**, **Comma (2)** is selected for **Dilimiter** and click on **OK (3)**.
 
      ![](Images/21-7-25-l1-23.png)
 
