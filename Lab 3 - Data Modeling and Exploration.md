@@ -11,7 +11,7 @@ This lab provides step-by-step instructions for users to follow, accompanied by 
 - Task 1 - Power BI Desktop - Layout (READ-ONLY)
 - Task 2 - Power BI Desktop – Data Exploration 
 
-### Task 1 - Power BI Desktop - Layout (READ-ONLY)
+## Task 1 - Power BI Desktop - Layout (READ-ONLY)
 
 1. On the top of the window, you see the **Home** tab where the most common operations you perform are available.
 
@@ -38,12 +38,12 @@ This lab provides step-by-step instructions for users to follow, accompanied by 
       ![](Images/did56.png)
     
 11. Click on the **Model** icon on the left panel of Power BI Desktop. You see the tables you have imported along with Relationships. The Power BI Desktop automatically infers relationships between the tables. 
-  - A relationship is created between the Sales and Product tables using the **ProductID** column.
-  - A relationship is created between the Product and Manufacturer tables using the **ManufacturerID** column.
+    - A relationship is created between the Sales and Product tables using the **ProductID** column.
+    - A relationship is created between the Product and Manufacturer tables using the **ManufacturerID** column.
 
        ![](Images/did57.png)
     
-### Task 2 - Power BI Desktop – Data Exploration 
+## Task 2 - Power BI Desktop – Data Exploration 
 
 1. Click on the **Report (1)** icon on the left panel. Select the **Clustered column chart (2)** visual in **Visualizations** as shown in the screenshot.
 
@@ -97,37 +97,35 @@ This lab provides step-by-step instructions for users to follow, accompanied by 
 
       ![](Images//21-7-25-l3-6.png)
     
-1. Click on the **Report** icon on the left panel to navigate to the **Report** view and click on the **ellipsis (1)** on the below right corner of the visual. Click on **Sort axis (2)** and select **Sum of Revenue (3)**.
+1. Click on the **Report** icon on the left panel to navigate to the **Report** view and click on the **ellipsis (1)** on the bottom right corner of the visual. Click on **Sort axis (2)** and select **Sum of Revenue (3)**.
 
       ![](Images/did59.png)
 
 1. From the Data section, **uncheck** the box and **drag** the **Country (1)** field from the **Geography** table to the Filters pane and drop it in **Filters on all pages**. Change Filter type to **Advanced filtering (2)** and from the dropdown, choose **is not blank** **(3)**, click on **Apply Filter (4)**.
  
-      ![](Images//21-7-25-l3-6.png)
+      ![](Images//21-7-25-l3-8.png)
 
-1. Click on the **Model** icon.
-
-1. Drag the **ProductID** field in the **Sales** table to connect the line with the **ProductID** field in the **Product** table and click on **Save**.
+1. Click on the **Model (1)** icon and drag the **ProductID (2)** field in the **Sales** table to connect the line with the **ProductID (3)** field in the **Product** table and click on **Save**.
 
    ![](Images//21-7-25-l3-9.png)
 
     > **Note:** If you receive an error stating "There's already a relationship between these two columns," kindly repeat this step.
 
-1. Drag the **ManufacturerID** field in the **Manufacturer** table to connect the line with the **ManufacturerID** field in the **Product** table.
+1. Drag the **ManufacturerID (1)** field in the **Product** table to connect the line with the **ManufacturerID (2)** field in the **Manufacturer** table.
 
       ![](Images//21-7-25-l3-10.1.png)
 
-1. Now, click on the **Report** icon on the left panel. From the **Data** section, expand the **Manufacturer** table, and then drag the **Manufacturer (1)** column to the **Legend** section under Visualizations.From the **Visualizations** section, click on the **Stacked column chart (2)** visual.
+1. Now, click on the **Report** icon on the left panel. From the **Data** section, expand the **Manufacturer** table, and then drag the **Manufacturer (1)** column to the **Legend** section under Visualizations. From the **Visualizations** section, click on the **Stacked column chart (2)** visual.
 
     - **Note :** Make sure to check the box next to the **Country** field under the **Geography table**, and also check the box next to the **Revenue** field under the **Sales table**.
 
       ![](Images/did72-1.png)
 
-1. Click on the **Ellipsis (1)** on the top right corner of the visual, click on **Sort axis (2)** and select **Sort decending (3)**.
+1. Click on the **Ellipsis (...) (1)** on the top right corner of the visual, click on **Sort axis (2)**, and select **Sort descending (3)**.
 
       ![](Images/did73.png)
     
-1. In the **Filters** pane, expand **Manufacturer** and drag under **Filters on this visual**. From the **Filter Type** dropdown menu, click **Top N (1)**. Enter **5 (2)** in the text box next to **Top**. From the **Sales** table, drag and drop the **Sum of Revenue (3)** field into the **By value** section. Click on **Apply filter (4)**.
+1. In the **Filters** pane, expand **Manufacturer** and drag under **Filters on this visual**. From the **Filter type** dropdown menu, click **Top N (1)**. Enter **5 (2)** in the text box next to **Top**. From the **Sales** table, drag and drop the **Sum of Revenue (3)** field into the **By value** section. Click on **Apply filter (4)**.
 
       ![](Images/diad19.png)
 
@@ -141,7 +139,7 @@ This lab provides step-by-step instructions for users to follow, accompanied by 
 
 1. From the **Data** section, right-click on the **Manufacturer (1)** field name from **Manufacturer** table and click **New group (2)**.
 
-      ![](Images//21-7-25-l3-13.png)
+      ![](Images//21-7-25-l3-14.png)
    
       >**Note**: Do not check the checkbox.
 
@@ -157,11 +155,11 @@ This lab provides step-by-step instructions for users to follow, accompanied by 
 
       ![](Images/did77.png)
     
-1. From the **Data** section, drag the newly created **Manufacturer (groups)** to the **Legend** section. Now we can see that VanArsdel has nearly 50% share in USA.
+1. From the **Data** section, drag the newly created **Manufacturer (groups) (1)** to the **Legend (2)** section. Now we can see that VanArsdel has nearly 50% share in USA.
 
       ![](Images//21-7-25-l3-17.png)
 
-1. Hover over one of the columns and right-click. Click **Show as a table**. You will now be in **Focus** mode with the chart displayed on top and the data displayed below. Notice that VanArsdel has a large percentage of the USA market.
+1. Hover over one of the columns and right-click. and click **Show as a table**. You will now be in **Focus** mode with the chart displayed on top and the data displayed below. Notice that VanArsdel has a large percentage of the USA market.
 
       ![](Images/did79.png)
 
@@ -179,9 +177,9 @@ This lab provides step-by-step instructions for users to follow, accompanied by 
 
       ![](Images//21-7-25-l3-18.png)
 
-1. Begin by clicking on the white space in the canvas and select **Clusterd column chart (1)** from Visualizations.Click the checkbox next to the **Date (2)** field in the **Sales** table. Click the checkbox next to the **Revenue (3)** in the **Sales** table field.
+1. Begin by clicking on the white space in the canvas and selecting **Clustered column chart (1)** from Visualizations. Click the checkbox next to the **Date (2)** field in the **Sales** table. Click the checkbox next to the **Revenue (3)** in the **Sales** table field.
    
-      > **Note:** Notice that a Clustered column chart is created. Also notice in the **Axis** section, a date hierarchy is created. There are arrows on the top bar of the chart which are used to navigate through the hierarchy.
+      > **Note:** Notice that a Clustered column chart is created. Also, notice in the **Axis** section, a date hierarchy is created. There are arrows on the top bar of the chart which are used to navigate through the hierarchy.
 
       ![](Images/did86.png)
 
